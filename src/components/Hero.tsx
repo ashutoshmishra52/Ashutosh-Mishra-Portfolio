@@ -97,13 +97,13 @@ const Hero = () => {
           </div>
           
           <div className="flex gap-5 justify-center md:justify-start animate-fade-in" style={{ animationDelay: '0.8s' }}>
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
+            <a href="https://github.com/ashutoshmishra52" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
               <Github size={20} />
             </a>
             <a href="https://youtube.com" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
               <Youtube size={20} />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
+            <a href="https://www.instagram.com/ashutoshmishra.52?igsh=NHFtYzBhOXk2bGFj" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
               <Instagram size={20} />
             </a>
             <a href="mailto:contact@example.com" className="hover:text-primary transition-colors">

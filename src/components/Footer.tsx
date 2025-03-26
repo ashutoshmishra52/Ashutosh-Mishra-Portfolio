@@ -1,5 +1,5 @@
 
-import { Heart } from 'lucide-react';
+import { Heart, Linkedin, Github, Instagram } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -19,6 +19,18 @@ const Footer = () => {
               <a href="#about" className="text-sm hover:text-primary transition-colors">About</a>
               <a href="#projects" className="text-sm hover:text-primary transition-colors">Projects</a>
               <a href="#contact" className="text-sm hover:text-primary transition-colors">Contact</a>
+            </div>
+            
+            <div className="flex gap-4 mb-4 md:mb-0">
+              <a href="https://github.com/ashutoshmishra52" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
+                <Github className="h-5 w-5" />
+              </a>
+              <a href="https://www.instagram.com/ashutoshmishra.52?igsh=NHFtYzBhOXk2bGFj" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a href="https://www.linkedin.com/in/ashutosh-mishra-dev?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
+                <Linkedin className="h-5 w-5" />
+              </a>
             </div>
             
             <p className="text-sm text-muted-foreground text-center md:text-right">

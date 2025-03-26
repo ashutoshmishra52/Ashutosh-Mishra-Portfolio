@@ -1,4 +1,3 @@
-
 import { Github, ExternalLink } from 'lucide-react';
 
 const Projects = () => {
@@ -8,7 +7,7 @@ const Projects = () => {
       description: 'An advanced AI chatbot supporting PDF downloads with upcoming features like video calls & live conversation.',
       image: '/lovable-uploads/7a08c244-0655-4df5-ad54-dc359669a766.png',
       tags: ['React', 'Node.js', 'OpenAI API', 'MongoDB'],
-      github: 'https://github.com',
+      github: 'https://github.com/ashutoshmishra52',
       demo: 'https://www.codewithashutosh.com/',
       author: 'Ashutosh Mishra'
     },
@@ -17,7 +16,7 @@ const Projects = () => {
       description: 'A custom-built Next.js-powered website for coding-related articles with SEO optimization, futuristic UI, and dynamic admin panel.',
       image: '/placeholder.svg',
       tags: ['Next.js', 'Tailwind CSS', 'CMS', 'SEO'],
-      github: 'https://github.com',
+      github: 'https://github.com/ashutoshmishra52',
       demo: 'https://example.com',
       author: 'Ashutosh Mishra'
     },
@@ -26,7 +25,7 @@ const Projects = () => {
       description: 'A modern, responsive portfolio website with dark/light mode and smooth animations to showcase my skills and projects.',
       image: '/placeholder.svg',
       tags: ['React', 'Tailwind CSS', 'Vite', 'TypeScript'],
-      github: 'https://github.com',
+      github: 'https://github.com/ashutoshmishra52',
       demo: 'https://example.com',
       author: 'Ashutosh Mishra'
     }
@@ -93,7 +92,7 @@ const Projects = () => {
         
         <div className="flex justify-center mt-12">
           <a 
-            href="https://github.com" 
+            href="https://github.com/ashutoshmishra52" 
             target="_blank" 
             rel="noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-full transition-all hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-1"
