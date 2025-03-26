@@ -9,7 +9,8 @@ const Projects = () => {
       image: '/lovable-uploads/7a08c244-0655-4df5-ad54-dc359669a766.png',
       tags: ['React', 'Node.js', 'OpenAI API', 'MongoDB'],
       github: 'https://github.com',
-      demo: 'https://www.codewithashutosh.com/'
+      demo: 'https://www.codewithashutosh.com/',
+      author: 'Ashutosh Mishra'
     },
     {
       title: 'CMS-Based Article Website',
@@ -17,7 +18,8 @@ const Projects = () => {
       image: '/placeholder.svg',
       tags: ['Next.js', 'Tailwind CSS', 'CMS', 'SEO'],
       github: 'https://github.com',
-      demo: 'https://example.com'
+      demo: 'https://example.com',
+      author: 'Ashutosh Mishra'
     },
     {
       title: 'Portfolio Website',
@@ -25,7 +27,8 @@ const Projects = () => {
       image: '/placeholder.svg',
       tags: ['React', 'Tailwind CSS', 'Vite', 'TypeScript'],
       github: 'https://github.com',
-      demo: 'https://example.com'
+      demo: 'https://example.com',
+      author: 'Ashutosh Mishra'
     }
   ];
 
@@ -54,7 +57,8 @@ const Projects = () => {
               
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
+                <p className="text-muted-foreground text-sm mb-2">{project.description}</p>
+                <p className="text-xs text-primary mb-4">By <a href="https://medium.com/@codewithashutosh" target="_blank" rel="noreferrer" className="hover:underline">{project.author}</a></p>
                 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map((tag, tagIndex) => (

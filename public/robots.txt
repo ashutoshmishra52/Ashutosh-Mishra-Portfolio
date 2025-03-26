@@ -1,7 +1,19 @@
+
+# Allow all web crawlers
+User-agent: *
+Allow: /
+
+# Specific permissions for major search engine bots
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
+Allow: /
+
+User-agent: Yandexbot
+Allow: /
+
+User-agent: Baiduspider
 Allow: /
 
 User-agent: Twitterbot
@@ -10,5 +22,5 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
-Allow: /
+# Sitemap location (add this when you have a sitemap)
+# Sitemap: https://www.codewithashutosh.com/sitemap.xml
