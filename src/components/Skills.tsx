@@ -40,8 +40,8 @@ const Skills = () => {
     {
       title: 'Content & SEO',
       skills: [
-        { name: 'Technical Writing', level: 90 },
-        { name: 'SEO Optimization', level: 85 },
+        { name: 'Technical Writing', level: 95 },
+        { name: 'SEO Optimization', level: 90 },
         { name: 'WordPress', level: 80 },
         { name: 'Content Strategy', level: 85 },
       ]
