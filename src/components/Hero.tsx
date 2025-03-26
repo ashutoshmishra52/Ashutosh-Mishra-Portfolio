@@ -1,6 +1,7 @@
 
 import { useEffect, useRef } from 'react';
-import { GitHub, Instagram, Mail, Youtube } from 'lucide-react';
+import { Github, Instagram, Mail, Youtube } from 'lucide-react';
+import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 
 const Hero = () => {
   const particlesContainerRef = useRef<HTMLDivElement>(null);
@@ -97,7 +98,7 @@ const Hero = () => {
           
           <div className="flex gap-5 justify-center md:justify-start animate-fade-in" style={{ animationDelay: '0.8s' }}>
             <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
-              <GitHub size={20} />
+              <Github size={20} />
             </a>
             <a href="https://youtube.com" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
               <Youtube size={20} />
@@ -112,9 +113,11 @@ const Hero = () => {
         </div>
         
         <div className="flex justify-center md:justify-end order-1 md:order-2 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden glass animate-float">
-            <div className="absolute inset-2 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900 dark:to-slate-800 rounded-full"></div>
-            <div className="absolute inset-0 flex items-center justify-center text-6xl font-bold text-primary opacity-80">AM</div>
+          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden glass animate-float border-4 border-primary/20">
+            <Avatar className="w-full h-full">
+              <AvatarImage src="/lovable-uploads/5b3793f0-c0db-4c69-8d26-b4826b06e7d3.png" alt="Ashutosh Mishra" className="object-cover" />
+              <AvatarFallback className="text-6xl font-bold text-primary">AM</AvatarFallback>
+            </Avatar>
           </div>
         </div>
       </div>
