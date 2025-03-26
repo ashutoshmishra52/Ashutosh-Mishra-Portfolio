@@ -39,14 +39,14 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: 'Email',
-      value: 'contact@ashumishra.com',
-      link: 'mailto:contact@ashumishra.com'
+      value: 'contact@ashutoshmishra.com',
+      link: 'mailto:ashutoshkrmishra2006@gmail.com'
     },
     {
       icon: <Phone className="h-6 w-6 text-primary" />,
       title: 'Phone',
-      value: '+91 98765 43210',
-      link: 'tel:+919876543210'
+      value: '+91 979835****',
+      link: 'tel:+91979835****'
     },
     {
       icon: <MapPin className="h-6 w-6 text-primary" />,
