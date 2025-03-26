@@ -6,10 +6,10 @@ const Projects = () => {
     {
       title: 'Aetheris AI Chatbot',
       description: 'An advanced AI chatbot supporting PDF downloads with upcoming features like video calls & live conversation.',
-      image: '/placeholder.svg',
+      image: '/lovable-uploads/7a08c244-0655-4df5-ad54-dc359669a766.png',
       tags: ['React', 'Node.js', 'OpenAI API', 'MongoDB'],
       github: 'https://github.com',
-      demo: 'https://example.com'
+      demo: 'https://www.codewithashutosh.com/'
     },
     {
       title: 'CMS-Based Article Website',

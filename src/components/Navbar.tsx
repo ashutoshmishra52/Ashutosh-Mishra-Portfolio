@@ -71,12 +71,12 @@ const Navbar = () => {
       
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 bg-white dark:bg-slate-900 z-40 pt-24 px-6 md:hidden flex flex-col items-center gap-8 animate-fade-in">
+        <div className="fixed inset-0 bg-white/90 dark:bg-slate-900/90 z-40 pt-24 px-6 md:hidden flex flex-col items-center gap-8 animate-fade-in">
           {navItems.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="text-lg font-medium"
+              className="text-xl font-medium hover:text-primary transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {item.name}
