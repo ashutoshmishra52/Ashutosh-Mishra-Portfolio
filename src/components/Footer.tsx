@@ -24,7 +24,7 @@ const Footer = () => {
               <a href="https://github.com/ashutoshmishra52" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
                 <Github className="h-5 w-5" />
               </a>
-              <a href="https://www.linkedin.com/in/ashutoshmishra52" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/in/ashutosh-mishra-dev/" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
               <a href="https://www.instagram.com/ashutoshmishra.52" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
