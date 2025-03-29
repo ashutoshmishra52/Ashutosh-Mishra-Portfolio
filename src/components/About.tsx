@@ -1,5 +1,4 @@
-
-import { Code, Edit, Lightbulb, Cpu, Server, BookOpen } from 'lucide-react';
+import { Code, Cpu, Server, BookOpen } from 'lucide-react';
 
 const About = () => {
   const skills = [
@@ -27,14 +26,14 @@ const About = () => {
 
   return (
     <section id="about" className="section-padding">
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-6xl px-6">
         <div className="flex flex-col items-center mb-16">
           <p className="text-primary font-medium mb-2">ABOUT ME</p>
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Who Am I?</h2>
           <div className="w-20 h-1.5 bg-primary/30 rounded-full"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center text-center md:text-left">
           <div className="space-y-6 order-2 md:order-1">
             <h3 className="text-2xl font-bold">
               AI Developer & <span className="gradient-text">SEO Writer</span>
@@ -68,18 +67,20 @@ const About = () => {
             </a>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 order-1 md:order-2">
+          {/* Cards Container */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 order-1 md:order-2 w-full justify-center">
             {skills.map((skill, index) => (
               <div 
                 key={index} 
-                className="glass p-6 rounded-2xl hover-card"
+                className="glass p-6 rounded-2xl hover-card text-center"
               >
-                <div className="mb-4">{skill.icon}</div>
+                <div className="mb-4 flex justify-center">{skill.icon}</div>
                 <h4 className="text-lg font-medium mb-2">{skill.title}</h4>
                 <p className="text-sm text-muted-foreground">{skill.description}</p>
               </div>
             ))}
           </div>
+
         </div>
       </div>
     </section>
