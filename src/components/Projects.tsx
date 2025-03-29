@@ -1,3 +1,4 @@
+
 import { ExternalLink } from 'lucide-react';
 
 const Projects = () => {
@@ -19,7 +20,10 @@ const Projects = () => {
       image: '/lovable-uploads/842eb360-6cce-4045-9203-9dec1c4b6c05.png',
       tags: ['Python', 'ML/AI', 'Data Analysis', 'Web Interface'],
       demo: 'https://fakeaccdetect.vercel.app/',
-      author: 'Ashutosh Mishra'
+      author: {
+        name: 'Ashutosh Mishra',
+        linkedin: 'https://www.linkedin.com/in/ashutoshmishra52'
+      }
     },
     {
       title: 'Coding 1v1 Battle Platform',
@@ -27,7 +31,10 @@ const Projects = () => {
       image: '/lovable-uploads/dbe47ea8-2d1c-4c9e-acef-da17a4f21d3a.png',
       tags: ['React', 'WebAssembly', 'Node.js', 'Socket.io'],
       demo: 'https://codewithashutosh.com',
-      author: 'Ashutosh Mishra'
+      author: {
+        name: 'Ashutosh Mishra',
+        linkedin: 'https://www.linkedin.com/in/ashutoshmishra52'
+      }
     },
     {
       title: 'SEO-Optimized Technical Blog',
@@ -35,7 +42,10 @@ const Projects = () => {
       image: '/placeholder.svg',
       tags: ['Technical Writing', 'SEO', 'Content Strategy'],
       demo: 'https://medium.com/@codewithashutosh',
-      author: 'Ashutosh Mishra'
+      author: {
+        name: 'Ashutosh Mishra',
+        linkedin: 'https://www.linkedin.com/in/ashutoshmishra52'
+      }
     }
   ];
 
