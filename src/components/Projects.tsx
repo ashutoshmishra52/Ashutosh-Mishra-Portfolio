@@ -38,7 +38,7 @@ const Projects = () => {
     {
       title: 'Hackathon & CodeBattle',
       description: 'An online competitive coding platform for hackathons and coding battles with real-time problem-solving challenges.',
-      image: 'https://raw.githubusercontent.com/ashutoshmishra52/sleekportfoliogen/main/public/lovable-uploads/Screenshot%202025-03-29%20181318.png',
+      image: 'https://raw.githubusercontent.com/ashutoshmishra52/sleekportfoliogen/main/public/lovable-uploads/Screenshot%202025-03-29%20185239.png',
       tags: ['Competitive Programming', 'Hackathon', 'Live Battles'],
       demo: 'https://ai-code-duel.vercel.app/',
       author: {
