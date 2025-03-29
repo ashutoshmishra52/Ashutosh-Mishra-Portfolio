@@ -27,7 +27,7 @@ const Projects = () => {
     {
       title: 'Coding 1v1 Battle Platform',
       description: 'A multiplayer competitive platform where developers can compete in real-time coding challenges and algorithmic problems.',
-      image: 'https://raw.githubusercontent.com/ashutoshmishra52/sleekportfoliogen/main/public/lovable-uploads/Screenshot%202025-03-29%20181318.png',
+      image: 'https://raw.githubusercontent.com/ashutoshmishra52/sleekportfoliogen/main/public/lovable-uploads/Screenshot%202025-03-29%20181230.png',
       tags: ['React', 'WebAssembly', 'Node.js', 'Socket.io'],
       demo: 'https://codewithashutosh.com',
       author: {
