@@ -1,5 +1,5 @@
 
-import { Heart, Linkedin, Github, ExternalLink, Mail } from 'lucide-react';
+import { Heart, Linkedin, Github, ExternalLink, Mail, Instagram } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -27,6 +27,9 @@ const Footer = () => {
               </a>
               <a href="https://www.linkedin.com/in/ashutosh-mishra-dev" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
                 <Linkedin className="h-5 w-5" />
+              </a>
+              <a href="https://www.instagram.com/ashutoshmishra.52" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
+                <Instagram className="h-5 w-5" />
               </a>
               <a href="https://medium.com/@codewithashutosh" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
                 <ExternalLink className="h-5 w-5" />

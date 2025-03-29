@@ -1,5 +1,5 @@
 
-import { Github, ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -8,34 +8,30 @@ const Projects = () => {
       description: 'An advanced AI chatbot supporting document analysis and natural language processing with custom features.',
       image: '/lovable-uploads/7a08c244-0655-4df5-ad54-dc359669a766.png',
       tags: ['OpenAI API', 'Node.js', 'React', 'NLP'],
-      github: 'https://github.com/ashutoshmishra52',
       demo: 'https://www.codewithashutosh.com/',
       author: 'Ashutosh Mishra'
     },
     {
-      title: 'Coding Battle Platform',
-      description: 'A multiplayer coding battle system that allows users to compete in real-time programming challenges.',
+      title: 'Coding 1v1 Battle Platform',
+      description: 'A multiplayer competitive platform where developers can compete in real-time coding challenges and algorithmic problems.',
       image: '/placeholder.svg',
       tags: ['React', 'WebAssembly', 'Node.js', 'Socket.io'],
-      github: 'https://github.com/ashutoshmishra52',
       demo: 'https://codewithashutosh.com',
       author: 'Ashutosh Mishra'
     },
     {
-      title: 'Ottox IoT Portfolio',
-      description: 'A complete static website for an IoT solutions provider showcasing their products and services.',
+      title: 'AI Research Projects',
+      description: 'Collection of innovative AI research projects including computer vision models and natural language processing applications.',
       image: '/placeholder.svg',
-      tags: ['HTML', 'CSS', 'JavaScript', 'IoT Integration'],
-      github: 'https://github.com/ashutoshmishra52',
+      tags: ['Python', 'TensorFlow', 'Computer Vision', 'NLP'],
       demo: 'https://codewithashutosh.com',
       author: 'Ashutosh Mishra'
     },
     {
-      title: 'SEO-Optimized Blog',
-      description: 'Technical articles on AI, coding, and web development with advanced SEO optimization.',
+      title: 'SEO-Optimized Technical Blog',
+      description: 'Technical articles on AI, coding, and web development with advanced SEO optimization techniques.',
       image: '/placeholder.svg',
       tags: ['Technical Writing', 'SEO', 'Content Strategy'],
-      github: 'https://github.com/ashutoshmishra52',
       demo: 'https://medium.com/@codewithashutosh',
       author: 'Ashutosh Mishra'
     }
@@ -52,9 +48,12 @@ const Projects = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div
+            <a
               key={index}
-              className="glass overflow-hidden rounded-2xl hover-card"
+              href={project.demo}
+              target="_blank" 
+              rel="noreferrer"
+              className="glass overflow-hidden rounded-2xl hover-card transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/10"
             >
               <div className="h-48 overflow-hidden">
                 <img
@@ -65,38 +64,24 @@ const Projects = () => {
               </div>
               
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+                <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">{project.title}</h3>
                 <p className="text-muted-foreground text-sm mb-2">{project.description}</p>
                 <p className="text-xs text-primary mb-4">By <a href="https://medium.com/@codewithashutosh" target="_blank" rel="noreferrer" className="hover:underline">{project.author}</a></p>
                 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map((tag, tagIndex) => (
-                    <span key={tagIndex} className="text-xs px-3 py-1 bg-primary/10 rounded-full">
+                    <span key={tagIndex} className="text-xs px-3 py-1 bg-primary/10 dark:bg-primary/20 rounded-full">
                       {tag}
                     </span>
                   ))}
                 </div>
                 
-                <div className="flex gap-4">
-                  <a 
-                    href={project.github} 
-                    target="_blank" 
-                    rel="noreferrer"
-                    className="flex items-center gap-1 text-sm transition-colors hover:text-primary"
-                  >
-                    <Github className="h-4 w-4" /> Code
-                  </a>
-                  <a 
-                    href={project.demo} 
-                    target="_blank" 
-                    rel="noreferrer"
-                    className="flex items-center gap-1 text-sm transition-colors hover:text-primary"
-                  >
-                    <ExternalLink className="h-4 w-4" /> Live Demo
-                  </a>
+                <div className="flex items-center text-primary">
+                  <ExternalLink className="h-4 w-4 mr-1" /> 
+                  <span className="text-sm">View Project</span>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
         
@@ -105,19 +90,10 @@ const Projects = () => {
             href="https://medium.com/@codewithashutosh" 
             target="_blank" 
             rel="noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-full transition-all hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-1 mr-4"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-full transition-all hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-1"
           >
             <ExternalLink className="h-5 w-5" />
-            Visit My Blog
-          </a>
-          <a 
-            href="https://github.com/ashutoshmishra52" 
-            target="_blank" 
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-foreground rounded-full transition-all hover:shadow-lg hover:-translate-y-1"
-          >
-            <Github className="h-5 w-5" />
-            See More on GitHub
+            Visit My Technical Blog
           </a>
         </div>
       </div>
