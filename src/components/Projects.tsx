@@ -1,4 +1,3 @@
-
 import { ExternalLink } from 'lucide-react';
 
 const Projects = () => {
@@ -17,7 +16,7 @@ const Projects = () => {
     {
       title: 'Fake Account Detection',
       description: 'Machine learning system to detect fake accounts on social media platforms using profile authenticity prediction.',
-      image: '/lovable-uploads/842eb360-6cce-4045-9203-9dec1c4b6c05.png',
+      image: '/public/lovable-uploads/Screenshot 2025-03-29 181230.png',
       tags: ['Python', 'ML/AI', 'Data Analysis', 'Web Interface'],
       demo: 'https://fakeaccdetect.vercel.app/',
       author: {
@@ -28,7 +27,7 @@ const Projects = () => {
     {
       title: 'Coding 1v1 Battle Platform',
       description: 'A multiplayer competitive platform where developers can compete in real-time coding challenges and algorithmic problems.',
-      image: '/lovable-uploads/dbe47ea8-2d1c-4c9e-acef-da17a4f21d3a.png',
+      image: '/public/lovable-uploads/Screenshot 2025-03-29 181318.png',
       tags: ['React', 'WebAssembly', 'Node.js', 'Socket.io'],
       demo: 'https://codewithashutosh.com',
       author: {
@@ -39,7 +38,7 @@ const Projects = () => {
     {
       title: 'SEO-Optimized Technical Blog',
       description: 'Technical articles on AI, coding, and web development with advanced SEO optimization techniques.',
-      image: '/placeholder.svg',
+      image: '/public/lovable-uploads/Screenshot 2025-03-29 181416.png',
       tags: ['Technical Writing', 'SEO', 'Content Strategy'],
       demo: 'https://medium.com/@codewithashutosh',
       author: {
