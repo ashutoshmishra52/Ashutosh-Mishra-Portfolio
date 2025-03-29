@@ -10,7 +10,7 @@ const Projects = () => {
       demo: 'https://www.codewithashutosh.com/',
       author: {
         name: 'Ashutosh Mishra',
-        linkedin: 'https://www.linkedin.com/in/ashutoshmishra52'
+        linkedin: 'https://www.linkedin.com/in/ashutosh-mishra-dev/'
       }
     },
     {
@@ -21,7 +21,7 @@ const Projects = () => {
       demo: 'https://fakeaccdetect.vercel.app/',
       author: {
         name: 'Ashutosh Mishra',
-        linkedin: 'https://www.linkedin.com/in/ashutoshmishra52'
+        linkedin: 'https://www.linkedin.com/in/ashutosh-mishra-dev/'
       }
     },
     {
@@ -32,18 +32,18 @@ const Projects = () => {
       demo: 'https://ai-code-duel-34.vercel.app/',
       author: {
         name: 'Ashutosh Mishra',
-        linkedin: 'https://www.linkedin.com/in/ashutoshmishra52'
+        linkedin: 'https://www.linkedin.com/in/ashutosh-mishra-dev/'
       }
     },
     {
-      title: 'SEO-Optimized Technical Blog',
-      description: 'Technical articles on AI, coding, and web development with advanced SEO optimization techniques.',
-      image: '',
-      tags: ['Technical Writing', 'SEO', 'Content Strategy'],
-      demo: 'https://medium.com/@codewithashutosh',
+      title: 'Hackathon & CodeBattle',
+      description: 'An online competitive coding platform for hackathons and coding battles with real-time problem-solving challenges.',
+      image: 'https://raw.githubusercontent.com/ashutoshmishra52/sleekportfoliogen/main/public/lovable-uploads/Screenshot%202025-03-29%20181318.png',
+      tags: ['Competitive Programming', 'Hackathon', 'Live Battles'],
+      demo: 'https://ai-code-duel.vercel.app/',
       author: {
         name: 'Ashutosh Mishra',
-        linkedin: 'https://www.linkedin.com/in/ashutoshmishra52'
+        linkedin: 'https://www.linkedin.com/in/ashutosh-mishra-dev/'
       }
     }
   ];
@@ -103,18 +103,6 @@ const Projects = () => {
               </div>
             </a>
           ))}
-        </div>
-        
-        <div className="flex justify-center mt-12">
-          <a 
-            href="https://medium.com/@codewithashutosh" 
-            target="_blank" 
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-full transition-all hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-1"
-          >
-            <ExternalLink className="h-5 w-5" />
-            Visit My Technical Blog
-          </a>
         </div>
       </div>
     </section>
