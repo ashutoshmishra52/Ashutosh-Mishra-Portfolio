@@ -6,24 +6,24 @@ const Projects = () => {
     {
       title: 'Aetheris AI Chatbot',
       description: 'An advanced AI chatbot supporting document analysis and natural language processing with custom features.',
-      image: '/lovable-uploads/7a08c244-0655-4df5-ad54-dc359669a766.png',
+      image: '/lovable-uploads/6c62cc6a-7241-41a5-b57e-19bc0621ad3d.png',
       tags: ['OpenAI API', 'Node.js', 'React', 'NLP'],
       demo: 'https://www.codewithashutosh.com/',
       author: 'Ashutosh Mishra'
     },
     {
-      title: 'Coding 1v1 Battle Platform',
-      description: 'A multiplayer competitive platform where developers can compete in real-time coding challenges and algorithmic problems.',
-      image: '/placeholder.svg',
-      tags: ['React', 'WebAssembly', 'Node.js', 'Socket.io'],
-      demo: 'https://codewithashutosh.com',
+      title: 'Fake Account Detection',
+      description: 'Machine learning system to detect fake accounts on social media platforms using profile authenticity prediction.',
+      image: '/lovable-uploads/842eb360-6cce-4045-9203-9dec1c4b6c05.png',
+      tags: ['Python', 'ML/AI', 'Data Analysis', 'Web Interface'],
+      demo: 'https://fakeaccdetect.vercel.app/',
       author: 'Ashutosh Mishra'
     },
     {
-      title: 'AI Research Projects',
-      description: 'Collection of innovative AI research projects including computer vision models and natural language processing applications.',
-      image: '/placeholder.svg',
-      tags: ['Python', 'TensorFlow', 'Computer Vision', 'NLP'],
+      title: 'Coding 1v1 Battle Platform',
+      description: 'A multiplayer competitive platform where developers can compete in real-time coding challenges and algorithmic problems.',
+      image: '/lovable-uploads/dbe47ea8-2d1c-4c9e-acef-da17a4f21d3a.png',
+      tags: ['React', 'WebAssembly', 'Node.js', 'Socket.io'],
       demo: 'https://codewithashutosh.com',
       author: 'Ashutosh Mishra'
     },
@@ -55,7 +55,7 @@ const Projects = () => {
               rel="noreferrer"
               className="glass overflow-hidden rounded-2xl hover-card transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/10"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="h-64 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
