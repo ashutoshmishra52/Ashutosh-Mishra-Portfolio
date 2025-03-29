@@ -1,4 +1,3 @@
-
 import { ExternalLink } from 'lucide-react';
 
 const Projects = () => {
@@ -9,7 +8,10 @@ const Projects = () => {
       image: '/lovable-uploads/6c62cc6a-7241-41a5-b57e-19bc0621ad3d.png',
       tags: ['OpenAI API', 'Node.js', 'React', 'NLP'],
       demo: 'https://www.codewithashutosh.com/',
-      author: 'Ashutosh Mishra'
+      author: {
+        name: 'Ashutosh Mishra',
+        linkedin: 'https://www.linkedin.com/in/ashutoshmishra52'
+      }
     },
     {
       title: 'Fake Account Detection',
@@ -66,7 +68,16 @@ const Projects = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">{project.title}</h3>
                 <p className="text-muted-foreground text-sm mb-2">{project.description}</p>
-                <p className="text-xs text-primary mb-4">By <a href="https://medium.com/@codewithashutosh" target="_blank" rel="noreferrer" className="hover:underline">{project.author}</a></p>
+                <p className="text-xs text-primary mb-4">
+                  By <a 
+                    href={project.author.linkedin} 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className="hover:underline"
+                  >
+                    {project.author.name}
+                  </a>
+                </p>
                 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map((tag, tagIndex) => (

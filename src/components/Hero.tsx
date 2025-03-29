@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 import { Github, Linkedin, ExternalLink, File } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
@@ -97,11 +96,11 @@ const Hero = () => {
           </div>
           
           <div className="flex gap-5 justify-center md:justify-start animate-fade-in" style={{ animationDelay: '0.8s' }}>
+            <a href="https://www.linkedin.com/in/ashutoshmishra52" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
+              <Linkedin size={20} />
+            </a>
             <a href="https://github.com/ashutoshmishra52" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
               <Github size={20} />
-            </a>
-            <a href="https://www.linkedin.com/in/ashutosh-mishra-dev" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
-              <Linkedin size={20} />
             </a>
             <a href="https://medium.com/@codewithashutosh" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
               <File size={20} />
