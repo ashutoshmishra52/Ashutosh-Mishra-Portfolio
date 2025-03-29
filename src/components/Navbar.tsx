@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
@@ -18,20 +17,28 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      setIsScrolled(scrollPosition > 10);
+      setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Disable scrolling when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [isMobileMenuOpen]);
+
   return (
-    <header 
+    <header
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
         isScrolled 
           ? 'py-4 bg-white/80 dark:bg-black/80 backdrop-blur-lg border-b border-slate-200/20 dark:border-slate-800/20' 
-          : 'py-6'
+          : 'py-5 md:py-6'
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
@@ -39,7 +46,7 @@ const Navbar = () => {
         <a href="#home" className="text-2xl font-bold gradient-text">AM.</a>
         
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-10">
+        <nav className="hidden md:flex items-center space-x-8">
           {navItems.map((item) => (
             <a
               key={item.name}
@@ -61,29 +68,39 @@ const Navbar = () => {
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
-              <X className="h-6 w-6" />
+              <X className="h-6 w-6 text-primary" />
             ) : (
-              <Menu className="h-6 w-6" />
+              <Menu className="h-6 w-6 text-primary" />
             )}
           </button>
         </div>
       </div>
       
       {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="fixed inset-0 bg-white/90 dark:bg-slate-900/90 z-40 pt-24 px-6 md:hidden flex flex-col items-center gap-8 animate-fade-in">
-          {navItems.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-xl font-medium hover:text-primary transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              {item.name}
-            </a>
-          ))}
-        </div>
-      )}
+      <div
+        className={`fixed inset-0 bg-white/90 dark:bg-black/90 backdrop-blur-xl z-40 flex flex-col items-center justify-center gap-6 transition-transform duration-300 ${
+          isMobileMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'
+        }`}
+      >
+        {navItems.map((item) => (
+          <a
+            key={item.name}
+            href={item.href}
+            className="text-lg font-medium hover:text-primary transition-colors"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            {item.name}
+          </a>
+        ))}
+
+        <button 
+          onClick={() => setIsMobileMenuOpen(false)}
+          className="absolute top-6 right-6 text-primary"
+          aria-label="Close menu"
+        >
+          <X className="h-8 w-8" />
+        </button>
+      </div>
     </header>
   );
 };
