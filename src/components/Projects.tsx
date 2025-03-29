@@ -1,32 +1,42 @@
+
 import { Github, ExternalLink } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
     {
       title: 'Aetheris AI Chatbot',
-      description: 'An advanced AI chatbot supporting PDF downloads with upcoming features like video calls & live conversation.',
+      description: 'An advanced AI chatbot supporting document analysis and natural language processing with custom features.',
       image: '/lovable-uploads/7a08c244-0655-4df5-ad54-dc359669a766.png',
-      tags: ['React', 'Node.js', 'OpenAI API', 'MongoDB'],
+      tags: ['OpenAI API', 'Node.js', 'React', 'NLP'],
       github: 'https://github.com/ashutoshmishra52',
       demo: 'https://www.codewithashutosh.com/',
       author: 'Ashutosh Mishra'
     },
     {
-      title: 'CMS-Based Article Website',
-      description: 'A custom-built Next.js-powered website for coding-related articles with SEO optimization, futuristic UI, and dynamic admin panel.',
+      title: 'Coding Battle Platform',
+      description: 'A multiplayer coding battle system that allows users to compete in real-time programming challenges.',
       image: '/placeholder.svg',
-      tags: ['Next.js', 'Tailwind CSS', 'CMS', 'SEO'],
+      tags: ['React', 'WebAssembly', 'Node.js', 'Socket.io'],
       github: 'https://github.com/ashutoshmishra52',
-      demo: 'https://example.com',
+      demo: 'https://codewithashutosh.com',
       author: 'Ashutosh Mishra'
     },
     {
-      title: 'Portfolio Website',
-      description: 'A modern, responsive portfolio website with dark/light mode and smooth animations to showcase my skills and projects.',
+      title: 'Ottox IoT Portfolio',
+      description: 'A complete static website for an IoT solutions provider showcasing their products and services.',
       image: '/placeholder.svg',
-      tags: ['React', 'Tailwind CSS', 'Vite', 'TypeScript'],
+      tags: ['HTML', 'CSS', 'JavaScript', 'IoT Integration'],
       github: 'https://github.com/ashutoshmishra52',
-      demo: 'https://example.com',
+      demo: 'https://codewithashutosh.com',
+      author: 'Ashutosh Mishra'
+    },
+    {
+      title: 'SEO-Optimized Blog',
+      description: 'Technical articles on AI, coding, and web development with advanced SEO optimization.',
+      image: '/placeholder.svg',
+      tags: ['Technical Writing', 'SEO', 'Content Strategy'],
+      github: 'https://github.com/ashutoshmishra52',
+      demo: 'https://medium.com/@codewithashutosh',
       author: 'Ashutosh Mishra'
     }
   ];
@@ -40,7 +50,7 @@ const Projects = () => {
           <div className="w-20 h-1.5 bg-primary/30 rounded-full"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -92,10 +102,19 @@ const Projects = () => {
         
         <div className="flex justify-center mt-12">
           <a 
+            href="https://medium.com/@codewithashutosh" 
+            target="_blank" 
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-full transition-all hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-1 mr-4"
+          >
+            <ExternalLink className="h-5 w-5" />
+            Visit My Blog
+          </a>
+          <a 
             href="https://github.com/ashutoshmishra52" 
             target="_blank" 
             rel="noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-full transition-all hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-1"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-foreground rounded-full transition-all hover:shadow-lg hover:-translate-y-1"
           >
             <Github className="h-5 w-5" />
             See More on GitHub

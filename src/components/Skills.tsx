@@ -2,48 +2,41 @@
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Frontend',
+      title: 'AI & ML',
+      skills: [
+        { name: 'Python', level: 90 },
+        { name: 'TensorFlow', level: 80 },
+        { name: 'OpenAI API', level: 90 },
+        { name: 'NLP', level: 85 },
+        { name: 'Computer Vision', level: 75 },
+      ]
+    },
+    {
+      title: 'Web Development',
       skills: [
         { name: 'React.js', level: 90 },
-        { name: 'Next.js', level: 85 },
-        { name: 'Tailwind CSS', level: 90 },
-        { name: 'TypeScript', level: 80 },
+        { name: 'JavaScript', level: 95 },
+        { name: 'WebAssembly', level: 75 },
+        { name: 'Node.js', level: 85 },
         { name: 'HTML/CSS', level: 95 },
       ]
     },
     {
-      title: 'Backend',
+      title: 'SEO & Content',
       skills: [
-        { name: 'Node.js', level: 85 },
-        { name: 'Express.js', level: 80 },
-        { name: 'RESTful APIs', level: 85 },
-        { name: 'GraphQL', level: 70 },
+        { name: 'Keyword Research', level: 90 },
+        { name: 'Technical SEO', level: 85 },
+        { name: 'Content Strategy', level: 90 },
+        { name: 'Article Writing', level: 95 },
       ]
     },
     {
-      title: 'Database',
+      title: 'Tools & Tech',
       skills: [
-        { name: 'MongoDB', level: 85 },
-        { name: 'Firebase', level: 80 },
-        { name: 'SQL', level: 75 },
-      ]
-    },
-    {
-      title: 'AI & Tools',
-      skills: [
-        { name: 'Gemini API', level: 85 },
-        { name: 'OpenAI API', level: 80 },
         { name: 'Git/GitHub', level: 90 },
-        { name: 'CI/CD', level: 75 },
-      ]
-    },
-    {
-      title: 'Content & SEO',
-      skills: [
-        { name: 'Technical Writing', level: 95 },
-        { name: 'SEO Optimization', level: 90 },
-        { name: 'WordPress', level: 80 },
-        { name: 'Content Strategy', level: 85 },
+        { name: 'RESTful APIs', level: 85 },
+        { name: 'MongoDB', level: 80 },
+        { name: 'IoT Integration', level: 75 },
       ]
     }
   ];
@@ -57,7 +50,7 @@ const Skills = () => {
           <div className="w-20 h-1.5 bg-primary/30 rounded-full"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {skillCategories.map((category, index) => (
             <div key={index} className="glass p-6 rounded-2xl hover-card">
               <h3 className="text-xl font-bold mb-6 gradient-text">{category.title}</h3>

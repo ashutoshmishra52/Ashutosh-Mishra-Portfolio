@@ -1,27 +1,27 @@
 
-import { Code, Edit, Lightbulb, Cpu } from 'lucide-react';
+import { Code, Edit, Lightbulb, Cpu, Server, BookOpen } from 'lucide-react';
 
 const About = () => {
   const skills = [
     {
+      icon: <Cpu className="w-8 h-8 text-purple-500" />,
+      title: 'AI Development',
+      description: 'Building intelligent solutions with OpenAI API, NLP, and custom AI applications.'
+    },
+    {
       icon: <Code className="w-8 h-8 text-blue-500" />,
       title: 'Web Development',
-      description: 'Full-stack development with React/Next.js, Node.js, and modern frameworks.'
+      description: 'Full-stack development with React, Node.js, WebAssembly, and modern frameworks.'
     },
     {
-      icon: <Cpu className="w-8 h-8 text-purple-500" />,
-      title: 'AI Integration',
-      description: 'Building advanced AI chatbots and integrating LLMs into web applications.'
+      icon: <BookOpen className="w-8 h-8 text-green-500" />,
+      title: 'SEO Writing',
+      description: 'Crafting SEO-optimized content, technical articles, and engaging blog posts.'
     },
     {
-      icon: <Edit className="w-8 h-8 text-green-500" />,
-      title: 'Content Writing',
-      description: 'Technical articles, blogs, and content strategy with SEO optimization.'
-    },
-    {
-      icon: <Lightbulb className="w-8 h-8 text-yellow-500" />,
-      title: 'Innovation',
-      description: 'Combining cutting-edge technologies to create unique solutions.'
+      icon: <Server className="w-8 h-8 text-yellow-500" />,
+      title: 'Technical Skills',
+      description: 'Proficient in Python, TensorFlow, JavaScript, and IoT integrations.'
     },
   ];
 
@@ -37,25 +37,26 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 order-2 md:order-1">
             <h3 className="text-2xl font-bold">
-              Full-Stack Developer & <span className="gradient-text">AI Enthusiast</span>
+              AI Developer & <span className="gradient-text">SEO Writer</span>
             </h3>
             
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Hello! I'm Ashutosh Mishra, a Full-Stack Web Developer with over 4 years of 
-                experience specializing in React (Next.js), AI chatbot development, and content 
-                creation.
+                Hello! I'm Ashutosh Mishra, a B.Tech CSE student passionate about AI development 
+                and technical writing with over 4 years of experience in web development and AI integration.
               </p>
               
               <p>
-                I graduated with a B.Tech in Computer Science from BEU University and am 
-                affiliated with Vidya Vihar Institute of Technology, Purnia, Bihar (VVIT R&D Cell).
+                I've worked on multiple AI projects, including <strong>Aetheris</strong>, an advanced 
+                AI chatbot, and upgrading AI solutions for <strong>Vidya Vihar Institute of Technology 
+                (VVIT), Purnia</strong>.
               </p>
               
               <p>
-                My passion lies in creating innovative digital experiences that combine beautiful 
-                interfaces with powerful functionality. I'm constantly exploring new technologies 
-                and methodologies to deliver exceptional results.
+                My expertise spans from building intelligent AI solutions to crafting 
+                SEO-optimized content. I'm constantly exploring new technologies to create 
+                innovative digital experiences that combine cutting-edge functionality with 
+                user-friendly interfaces.
               </p>
             </div>
             
@@ -63,7 +64,7 @@ const About = () => {
               href="#contact" 
               className="inline-block px-6 py-3 bg-primary text-white rounded-full transition-all hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-1"
             >
-              Let's Work Together
+              Hire Me
             </a>
           </div>
           

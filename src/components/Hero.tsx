@@ -1,6 +1,6 @@
 
 import { useEffect, useRef } from 'react';
-import { Github, Instagram, Mail, Youtube } from 'lucide-react';
+import { Github, Linkedin, ExternalLink, File } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 
 const Hero = () => {
@@ -79,17 +79,17 @@ const Hero = () => {
               Ashutosh Mishra
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground">
-              Innovating with Code | AI | Content | Web Solutions
+              AI Developer & SEO Writer
             </p>
           </div>
           
           <p className="text-base md:text-lg max-w-md mx-auto md:mx-0 text-muted-foreground animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            Full-Stack Web Developer with expertise in React/Next.js and AI integration. Bringing your ideas to life through code and creativity.
+            Building intelligent solutions with AI & crafting SEO-optimized content.
           </p>
           
           <div className="flex gap-4 justify-center md:justify-start animate-fade-in" style={{ animationDelay: '0.6s' }}>
             <a href="#contact" className="px-6 py-3 bg-primary text-white rounded-full transition-all hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-1">
-              Contact Me
+              Hire Me
             </a>
             <a href="#projects" className="px-6 py-3 bg-secondary text-foreground rounded-full transition-all hover:shadow-lg hover:-translate-y-1">
               View My Work
@@ -100,14 +100,14 @@ const Hero = () => {
             <a href="https://github.com/ashutoshmishra52" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
               <Github size={20} />
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
-              <Youtube size={20} />
+            <a href="https://www.linkedin.com/in/ashutosh-mishra-dev" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
+              <Linkedin size={20} />
             </a>
-            <a href="https://www.instagram.com/ashutoshmishra.52?igsh=NHFtYzBhOXk2bGFj" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
-              <Instagram size={20} />
+            <a href="https://medium.com/@codewithashutosh" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
+              <File size={20} />
             </a>
-            <a href="mailto:contact@example.com" className="hover:text-primary transition-colors">
-              <Mail size={20} />
+            <a href="https://codewithashutosh.com" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
+              <ExternalLink size={20} />
             </a>
           </div>
         </div>

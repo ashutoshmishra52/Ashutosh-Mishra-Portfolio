@@ -1,5 +1,5 @@
 
-import { Heart, Linkedin, Github, Instagram } from 'lucide-react';
+import { Heart, Linkedin, Github, ExternalLink, Mail } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <a href="#home" className="text-xl font-bold gradient-text">Ashutosh Mishra</a>
-            <p className="text-sm text-muted-foreground mt-1">Full-Stack Developer & AI Enthusiast</p>
+            <p className="text-sm text-muted-foreground mt-1">AI Developer & SEO Writer</p>
           </div>
           
           <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
@@ -25,11 +25,14 @@ const Footer = () => {
               <a href="https://github.com/ashutoshmishra52" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
                 <Github className="h-5 w-5" />
               </a>
-              <a href="https://www.instagram.com/ashutoshmishra.52?igsh=NHFtYzBhOXk2bGFj" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="https://www.linkedin.com/in/ashutosh-mishra-dev?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/in/ashutosh-mishra-dev" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
                 <Linkedin className="h-5 w-5" />
+              </a>
+              <a href="https://medium.com/@codewithashutosh" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
+                <ExternalLink className="h-5 w-5" />
+              </a>
+              <a href="mailto:ashutoshkrmishra2006@gmail.com" className="hover:text-primary transition-colors">
+                <Mail className="h-5 w-5" />
               </a>
             </div>
             
