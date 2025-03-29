@@ -29,7 +29,7 @@ const Projects = () => {
       description: 'A multiplayer competitive platform where developers can compete in real-time coding challenges and algorithmic problems.',
       image: 'https://raw.githubusercontent.com/ashutoshmishra52/sleekportfoliogen/main/public/lovable-uploads/Screenshot%202025-03-29%20181416.png',
       tags: ['React', 'WebAssembly', 'Node.js', 'Socket.io'],
-      demo: 'https://codewithashutosh.com',
+      demo: 'https://ai-code-duel-34.vercel.app/',
       author: {
         name: 'Ashutosh Mishra',
         linkedin: 'https://www.linkedin.com/in/ashutoshmishra52'
