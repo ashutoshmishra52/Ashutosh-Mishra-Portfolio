@@ -27,9 +27,9 @@ const Navbar = () => {
   // Disable scrolling when mobile menu is open
   useEffect(() => {
     if (isMobileMenuOpen) {
-      document.body.style.overflow = 'hidden';
+      document.documentElement.classList.add('overflow-hidden');
     } else {
-      document.body.style.overflow = 'auto';
+      document.documentElement.classList.remove('overflow-hidden');
     }
   }, [isMobileMenuOpen]);
 
@@ -63,24 +63,19 @@ const Navbar = () => {
           <ThemeToggle />
           
           <button 
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            onClick={() => setIsMobileMenuOpen(true)}
             className="md:hidden focus:outline-none"
             aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? (
-              <X className="h-6 w-6 text-primary" />
-            ) : (
-              <Menu className="h-6 w-6 text-primary" />
-            )}
+            <Menu className="h-6 w-6 text-primary" />
           </button>
         </div>
       </div>
       
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 bg-white/90 dark:bg-black/90 backdrop-blur-xl z-40 flex flex-col items-center justify-center gap-6 transition-transform duration-300 ${
-          isMobileMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'
-        }`}
+        className={`fixed inset-0 bg-white/90 dark:bg-black/90 backdrop-blur-xl z-40 flex flex-col items-center justify-center gap-6 
+        transition-all duration-300 ease-in-out ${isMobileMenuOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0 pointer-events-none'}`}
       >
         {navItems.map((item) => (
           <a
