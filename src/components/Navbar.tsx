@@ -37,7 +37,7 @@ const Navbar = () => {
     <header
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'py-4 bg-white/80 dark:bg-black/80 backdrop-blur-lg border-b border-slate-200/20 dark:border-slate-800/20' 
+          ? 'py-3 bg-white/80 dark:bg-black/80 backdrop-blur-lg border-b border-slate-200/20 dark:border-slate-800/20' 
           : 'py-5 md:py-6'
       }`}
     >
@@ -46,12 +46,12 @@ const Navbar = () => {
         <a href="#home" className="text-2xl font-bold gradient-text">AM.</a>
         
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex items-center space-x-10">
           {navItems.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
+              className="text-base md:text-lg font-semibold relative after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-0 after:bg-primary after:transition-all hover:after:w-full hover:text-primary transition-all"
             >
               {item.name}
             </a>
@@ -59,7 +59,7 @@ const Navbar = () => {
         </nav>
         
         {/* Theme Toggle and Mobile Menu Button */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-6">
           <ThemeToggle />
           
           <button 
@@ -67,7 +67,7 @@ const Navbar = () => {
             className="md:hidden focus:outline-none"
             aria-label="Toggle menu"
           >
-            <Menu className="h-6 w-6 text-primary" />
+            <Menu className="h-7 w-7 text-primary" />
           </button>
         </div>
       </div>
@@ -82,7 +82,7 @@ const Navbar = () => {
           <a
             key={item.name}
             href={item.href}
-            className="text-lg font-medium hover:text-primary transition-colors"
+            className="text-xl font-semibold hover:text-primary transition-all"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             {item.name}
@@ -94,7 +94,7 @@ const Navbar = () => {
           className="absolute top-6 right-6 text-primary"
           aria-label="Close menu"
         >
-          <X className="h-8 w-8" />
+          <X className="h-9 w-9" />
         </button>
       </div>
     </header>
