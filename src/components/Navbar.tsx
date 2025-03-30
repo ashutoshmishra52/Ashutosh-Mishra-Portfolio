@@ -72,10 +72,11 @@ const Navbar = () => {
         </div>
       </div>
       
-      {/* Mobile Menu */}
+      {/* Mobile Menu (Fixed and Fullscreen) */}
       <div
-        className={`fixed inset-0 bg-white/90 dark:bg-black/90 backdrop-blur-xl z-40 flex flex-col items-center justify-center gap-6 
-        transition-all duration-300 ease-in-out ${isMobileMenuOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0 pointer-events-none'}`}
+        className={`fixed top-0 left-0 w-full h-screen flex flex-col items-center justify-center bg-white/90 dark:bg-black/90 
+        backdrop-blur-xl z-50 transition-all duration-300 ease-in-out 
+        ${isMobileMenuOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}
       >
         {navItems.map((item) => (
           <a
