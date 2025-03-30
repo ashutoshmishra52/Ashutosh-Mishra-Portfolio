@@ -5,7 +5,7 @@ const Projects = () => {
     {
       title: 'Aetheris AI Chatbot',
       description: 'An advanced AI chatbot supporting document analysis and natural language processing with custom features.',
-      image: 'https://raw.githubusercontent.com/ashutoshmishra52/sleekportfoliogen/main/public/lovable-uploads/Screenshot%202025-03-29%20181203.png',
+      image: '/lovable-uploads/Screenshot%202025-03-29%20181203.png',
       tags: ['OpenAI API', 'Node.js', 'React', 'NLP'],
       demo: 'https://www.codewithashutosh.com/',
       author: {
@@ -16,7 +16,7 @@ const Projects = () => {
     {
       title: 'Fake Account Detection',
       description: 'Machine learning system to detect fake accounts on social media platforms using profile authenticity prediction.',
-      image: 'https://raw.githubusercontent.com/ashutoshmishra52/sleekportfoliogen/main/public/lovable-uploads/Screenshot%202025-03-29%20181230.png',
+      image: '/lovable-uploads/Screenshot%202025-03-29%20181230.png',
       tags: ['Python', 'ML/AI', 'Data Analysis', 'Web Interface'],
       demo: 'https://fakeaccdetect.vercel.app/',
       author: {
@@ -27,7 +27,7 @@ const Projects = () => {
     {
       title: 'Coding 1v1 Battle Platform',
       description: 'A multiplayer competitive platform where developers can compete in real-time coding challenges and algorithmic problems.',
-      image: 'https://raw.githubusercontent.com/ashutoshmishra52/sleekportfoliogen/main/public/lovable-uploads/Screenshot%202025-03-29%20181416.png',
+      image: '/lovable-uploads/Screenshot%202025-03-29%20181416.png',
       tags: ['React', 'WebAssembly', 'Node.js', 'Socket.io'],
       demo: 'https://ai-code-duel-34.vercel.app/',
       author: {
@@ -38,7 +38,7 @@ const Projects = () => {
     {
       title: 'Hackathon & CodeBattle',
       description: 'An online competitive coding platform for hackathons and coding battles with real-time problem-solving challenges.',
-      image: 'https://raw.githubusercontent.com/ashutoshmishra52/sleekportfoliogen/main/public/lovable-uploads/Screenshot%202025-03-29%20185239.png',
+      image: '/lovable-uploads/Screenshot%202025-03-29%20185239.png',
       tags: ['Competitive Programming', 'Hackathon', 'Live Battles'],
       demo: 'https://ai-code-duel.vercel.app/',
       author: {
