@@ -114,7 +114,7 @@ const Hero = () => {
         <div className="flex justify-center md:justify-end order-1 md:order-2 animate-fade-in" style={{ animationDelay: '0.3s' }}>
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden glass animate-float border-4 border-primary/20">
             <Avatar className="w-full h-full">
-              <AvatarImage src="/lovable-uploads/5b3793f0-c0db-4c69-8d26-b4826b06e7d3.png" alt="Ashutosh Mishra" className="object-cover" />
+              <AvatarImage src="/lovable-uploads/1000219208_11zon (2).png" alt="Ashutosh Mishra" className="object-cover" />
               <AvatarFallback className="text-6xl font-bold text-primary">AM</AvatarFallback>
             </Avatar>
           </div>
