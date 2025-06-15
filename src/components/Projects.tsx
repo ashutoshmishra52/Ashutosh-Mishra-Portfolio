@@ -29,13 +29,13 @@ const Projects = () => {
       description: 'A multiplayer competitive platform where developers can compete in real-time coding challenges and algorithmic problems.',
       image: '/lovable-uploads/Screenshot%202025-03-29%20181416.png',
       tags: ['React', 'WebAssembly', 'Node.js', 'Socket.io'],
-      demo: 'https://ai-code-duel-34.vercel.app/',
+      demo: 'https://codiny.codewithrandom.com/',
       author: PROJECT_AUTHOR,
     },
     {
       title: 'Bright Career School, Purnea',
       description: 'A modern school website built for Bright Career School, Purnea, showcasing academics, facilities, and more.',
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=cover&w=600&q=80",
+      image: "/lovable-uploads/cba6cd4e-bf81-443b-ba81-8b8c86d29d63.png", // Graduation cap image
       tags: ['Next.js', 'School Website', 'Modern Design'],
       demo: 'https://brightcareerschoolpurnea.codewithashutosh.com/',
       author: PROJECT_AUTHOR,
@@ -43,7 +43,7 @@ const Projects = () => {
     {
       title: 'GD Goenka, Purnea',
       description: 'Official website for GD Goenka Purnea. Features school info, activities, gallery, and more.',
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=cover&w=600&q=80",
+      image: "/lovable-uploads/ca779191-e0b2-4e96-ad74-3913cf517940.png", // GD Goenka building image
       tags: ['React', 'Landing Page', 'School Portal'],
       demo: 'https://gdgoenkapurnea.codewithashutosh.com/',
       author: PROJECT_AUTHOR,
@@ -112,3 +112,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
