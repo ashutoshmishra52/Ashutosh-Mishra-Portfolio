@@ -1,4 +1,10 @@
+
 import { ExternalLink } from 'lucide-react';
+
+const PROJECT_AUTHOR = {
+  name: 'Ashutosh Mishra',
+  linkedin: 'https://www.linkedin.com/in/ashutosh-mishra-dev/',
+};
 
 const Projects = () => {
   const projects = [
@@ -8,10 +14,7 @@ const Projects = () => {
       image: '/lovable-uploads/Screenshot%202025-03-29%20181203.png',
       tags: ['OpenAI API', 'Node.js', 'React', 'NLP'],
       demo: 'https://www.codewithashutosh.com/',
-      author: {
-        name: 'Ashutosh Mishra',
-        linkedin: 'https://www.linkedin.com/in/ashutosh-mishra-dev/'
-      }
+      author: PROJECT_AUTHOR,
     },
     {
       title: 'Fake Account Detection',
@@ -19,10 +22,7 @@ const Projects = () => {
       image: '/lovable-uploads/Screenshot%202025-03-29%20181230.png',
       tags: ['Python', 'ML/AI', 'Data Analysis', 'Web Interface'],
       demo: 'https://fakeaccdetect.vercel.app/',
-      author: {
-        name: 'Ashutosh Mishra',
-        linkedin: 'https://www.linkedin.com/in/ashutosh-mishra-dev/'
-      }
+      author: PROJECT_AUTHOR,
     },
     {
       title: 'Coding 1v1 Battle Platform',
@@ -30,22 +30,24 @@ const Projects = () => {
       image: '/lovable-uploads/Screenshot%202025-03-29%20181416.png',
       tags: ['React', 'WebAssembly', 'Node.js', 'Socket.io'],
       demo: 'https://ai-code-duel-34.vercel.app/',
-      author: {
-        name: 'Ashutosh Mishra',
-        linkedin: 'https://www.linkedin.com/in/ashutosh-mishra-dev/'
-      }
+      author: PROJECT_AUTHOR,
     },
     {
-      title: 'Hackathon & CodeBattle',
-      description: 'An online competitive coding platform for hackathons and coding battles with real-time problem-solving challenges.',
-      image: '/lovable-uploads/Screenshot%202025-03-29%20185239.png',
-      tags: ['Competitive Programming', 'Hackathon', 'Live Battles'],
-      demo: 'https://ai-code-duel.vercel.app/',
-      author: {
-        name: 'Ashutosh Mishra',
-        linkedin: 'https://www.linkedin.com/in/ashutosh-mishra-dev/'
-      }
-    }
+      title: 'Bright Career School, Purnea',
+      description: 'A modern school website built for Bright Career School, Purnea, showcasing academics, facilities, and more.',
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=cover&w=600&q=80",
+      tags: ['Next.js', 'School Website', 'Modern Design'],
+      demo: 'https://brightcareerschoolpurnea.codewithashutosh.com/',
+      author: PROJECT_AUTHOR,
+    },
+    {
+      title: 'GD Goenka, Purnea',
+      description: 'Official website for GD Goenka Purnea. Features school info, activities, gallery, and more.',
+      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=cover&w=600&q=80",
+      tags: ['React', 'Landing Page', 'School Portal'],
+      demo: 'https://gdgoenkapurnea.codewithashutosh.com/',
+      author: PROJECT_AUTHOR,
+    },
   ];
 
   return (
